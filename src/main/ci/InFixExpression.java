@@ -1,8 +1,11 @@
 package ci;
 
+import java.util.ArrayList;
+
 public class InFixExpression {
 
     private String wholeExpr = "";
+    private ArrayList<String> tokens = new ArrayList<>();
 
     public InFixExpression(String wholeExpr) {
         if (wholeExpr != null) {
@@ -11,6 +14,16 @@ public class InFixExpression {
     }
 
     public int getNumTokens() {
-        return 1;
+        tokenize();
+        return tokens.size();
     }
+
+    private void tokenize() {
+        String[] allTokens = wholeExpr.split("[ \t]+");
+        tokens.clear();
+        for (int i = 0; i < allTokens.length; ++i) {
+            tokens.add(allTokens[i]);
+        }
+    }
+
 }
