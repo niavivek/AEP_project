@@ -32,4 +32,11 @@ public class InFixExpressionTest {
         assertEquals(1, expr.checkPrecedence(")"));
     }
 
+    @Test
+    public void plusMinusHaveSecondPrecedence() {
+        InFixExpression expr = new InFixExpression();
+        assertEquals(2, expr.checkPrecedence("+"));
+        assertEquals(2, expr.checkPrecedence("-"));
+    }
+
 }
