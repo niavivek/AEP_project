@@ -37,4 +37,10 @@ public class InFixExpression {
             return false;
     }
 
+
+    public int checkPrecedence(String stringToken) {
+        if (stringToken.equals("(") || stringToken.equals(")"))
+            return 1;
+        return 0;
+    }
 }

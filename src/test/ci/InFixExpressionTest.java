@@ -25,4 +25,11 @@ public class InFixExpressionTest {
         assertEquals(true, expr.checkOperator("*"));
     }
 
+    @Test
+    public void bracketsHaveFirstPrecedence() {
+        InFixExpression expr = new InFixExpression();
+        assertEquals(1, expr.checkPrecedence("("));
+        assertEquals(1, expr.checkPrecedence(")"));
+    }
+
 }
