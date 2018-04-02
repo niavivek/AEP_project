@@ -39,4 +39,11 @@ public class InFixExpressionTest {
         assertEquals(2, expr.checkPrecedence("-"));
     }
 
+    @Test
+    public void multiplyDivideHaveSecondPrecedence() {
+        InFixExpression expr = new InFixExpression();
+        assertEquals(3, expr.checkPrecedence("*"));
+        assertEquals(3, expr.checkPrecedence("/"));
+    }
+
 }

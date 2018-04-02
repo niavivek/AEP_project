@@ -41,8 +41,10 @@ public class InFixExpression {
     public int checkPrecedence(String stringToken) {
         if (stringToken.equals("(") || stringToken.equals(")"))
             return 1;
-        if (stringToken.equals("+") || stringToken.equals("-"))
+        else if (stringToken.equals("+") || stringToken.equals("-"))
             return 2;
+        else if (stringToken.equals("*") || stringToken.equals("/"))
+            return 3;
         return 0;
     }
 }
