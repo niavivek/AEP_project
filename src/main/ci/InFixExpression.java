@@ -4,8 +4,12 @@ import java.util.ArrayList;
 
 public class InFixExpression {
 
-    private String wholeExpr = "";
+    private String wholeExpr;
     private ArrayList<String> tokens = new ArrayList<>();
+
+    public InFixExpression() {
+        this.wholeExpr = "";
+    }
 
     public InFixExpression(String wholeExpr) {
         if (wholeExpr != null) {
@@ -24,6 +28,13 @@ public class InFixExpression {
         for (int i = 0; i < allTokens.length; ++i) {
             tokens.add(allTokens[i]);
         }
+    }
+
+    public boolean checkOperator(String operator) {
+        if (operator.equals("+") || operator.equals("-") || operator.equals("*") || operator.equals("/"))
+            return true;
+        else
+            return false;
     }
 
 }

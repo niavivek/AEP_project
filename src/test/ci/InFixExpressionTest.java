@@ -16,4 +16,13 @@ public class InFixExpressionTest {
         assertEquals(3, expr.getNumTokens());
     }
 
+    @Test
+    public void plusMinusDivideMultiplyShouldBeOperators() {
+        InFixExpression expr = new InFixExpression();
+        assertEquals(true, expr.checkOperator("+"));
+        assertEquals(true, expr.checkOperator("-"));
+        assertEquals(true, expr.checkOperator("/"));
+        assertEquals(true, expr.checkOperator("*"));
+    }
+
 }
