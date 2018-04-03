@@ -70,4 +70,10 @@ public class InFixExpressionTest {
         assertEquals(12.0, expr.evaluate());
     }
 
+    @Test
+    public void threeTimesFourPlusFourTimesFiveIsThirtyTwo() {
+        InFixExpression expr = new InFixExpression("( 3 * 4 ) + ( 4 * 5 )");
+        assertEquals(32.0, expr.evaluate());
+    }
+
 }

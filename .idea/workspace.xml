@@ -15,8 +15,8 @@
       <file leaf-file-name="InFixExpressionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="68" column="61" lean-forward="false" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
+            <state relative-caret-position="280">
+              <caret line="74" column="72" lean-forward="false" selection-start-line="74" selection-start-column="72" selection-end-line="74" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +58,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
-    <option name="y" value="41" />
+    <option name="x" value="140" />
+    <option name="y" value="46" />
     <option name="width" value="1280" />
     <option name="height" value="788" />
   </component>
@@ -131,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InFixExpressionTest.threeTimesFourIsTwelve">
+  <component name="RunManager" selected="JUnit.InFixExpressionTest.threeTimesFourPlusFourTimesFiveIsThirtyTwo">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -347,8 +347,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.threeTimesFourIsTwelve" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.threeTimesFourPlusFourTimesFiveIsThirtyTwo" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.threeTimesFourPlusFourTimesFiveIsThirtyTwo" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.threeTimesFourIsTwelve" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.aPlusbIsNotAValidExpression" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.onePlusTwoIsValidExpression" />
@@ -378,12 +378,6 @@
     <history-entry file="InFixExpressionTest_aPlusbIsNotAValidExpression - 2018.04.02 at 17h 50m 27s.xml">
       <configuration name="InFixExpressionTest.aPlusbIsNotAValidExpression" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest_aPlusbIsValidExpression - 2018.04.02 at 17h 34m 13s.xml">
-      <configuration name="InFixExpressionTest.aPlusbIsValidExpression" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InFixExpressionTest_aPlusbIsValidExpression - 2018.04.02 at 17h 34m 28s.xml">
-      <configuration name="InFixExpressionTest.aPlusbIsValidExpression" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InFixExpressionTest_onePlusTwoIsValidExpression - 2018.04.02 at 17h 34m 55s.xml">
       <configuration name="InFixExpressionTest.onePlusTwoIsValidExpression" configurationId="JUnit" />
     </history-entry>
@@ -402,9 +396,15 @@
     <history-entry file="InFixExpressionTest_threeTimesFourPlusFourTimesFiveIsThirtyTwo - 2018.04.02 at 21h 12m 02s.xml">
       <configuration name="InFixExpressionTest.threeTimesFourPlusFourTimesFiveIsThirtyTwo" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="InFixExpressionTest_threeTimesFourPlusFourTimesFiveIsThirtyTwo - 2018.04.02 at 21h 18m 36s.xml">
+      <configuration name="InFixExpressionTest.threeTimesFourPlusFourTimesFiveIsThirtyTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InFixExpressionTest_threeTimesFourPlusFourTimesFiveIsThirtyTwo - 2018.04.02 at 21h 18m 49s.xml">
+      <configuration name="InFixExpressionTest.threeTimesFourPlusFourTimesFiveIsThirtyTwo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="41" width="1280" height="788" extended-state="0" />
+    <frame x="140" y="46" width="1280" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -416,7 +416,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -499,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="68" column="61" lean-forward="false" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
+        <state relative-caret-position="280">
+          <caret line="74" column="72" lean-forward="false" selection-start-line="74" selection-start-column="72" selection-end-line="74" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
