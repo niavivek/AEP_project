@@ -58,7 +58,7 @@ public class InFixExpression {
                 Double valueDouble = Double.parseDouble(value);
             }
             catch(NumberFormatException e){
-                System.out.println("The expression can only contain numbers, parenthesis and operators.");
+                System.err.println("The expression can only contain numbers, parenthesis and operators.");
                 throw e;
             }
             return true;
@@ -136,7 +136,7 @@ public class InFixExpression {
             }
         }
         catch (EmptyStackException ese){
-            System.out.println("The expression you entered is invalid.");
+            System.err.println("The expression you entered is invalid.");
             throw ese;
         }
         while (!operatorStack.isEmpty()){
