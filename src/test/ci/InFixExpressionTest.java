@@ -58,5 +58,12 @@ public class InFixExpressionTest {
         assertEquals(true, expr.checkExpression());
     }
 
+    @Test(expected = NumberFormatException.class)
+    public void aPlusbIsNotAValidExpression() {
+        InFixExpression expr = new InFixExpression("( a + b )");
+        expr.checkExpression();
+    }
+
+
 
 }
