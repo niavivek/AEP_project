@@ -15,10 +15,10 @@ public class InFixExpression {
         if (wholeExpr != null) {
             this.wholeExpr = wholeExpr;
         }
+        tokenize();
     }
 
     public int getNumTokens() {
-        tokenize();
         return tokens.size();
     }
 
@@ -63,4 +63,13 @@ public class InFixExpression {
         }
 
         }
+
+    public boolean checkExpression() {
+        for(String t: this.tokens){
+            checkValidity(t);
+        }
+        return true;
     }
+
+
+}

@@ -52,5 +52,11 @@ public class InFixExpressionTest {
         expr.checkValidity("a");
     }
 
+    @Test
+    public void onePlusTwoIsValidExpression() {
+        InFixExpression expr = new InFixExpression("( 1 + 2 )");
+        assertEquals(true, expr.checkExpression());
+    }
+
 
 }
