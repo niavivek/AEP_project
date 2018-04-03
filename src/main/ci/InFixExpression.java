@@ -47,4 +47,20 @@ public class InFixExpression {
             return 3;
         return 0;
     }
-}
+
+
+    public boolean checkValidity(String value) {
+        if (checkPrecedence(value) > 0) return true;
+        else{
+            try{
+                float value_float = Float.parseFloat(value);
+            }
+            catch(NumberFormatException e){
+                System.out.println("The expression can only contain numbers, parenthesis and operators.");
+                throw e;
+            }
+            return true;
+        }
+
+        }
+    }

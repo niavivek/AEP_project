@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InFixExpressionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InFixExpressionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+            <state relative-caret-position="353">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InFixExpression.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InFixExpression.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/ci/InFixExpression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="45" column="65" lean-forward="false" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+            <state relative-caret-position="265">
+              <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
               <folding>
                 <element signature="e#192#193#0" expanded="true" />
                 <element signature="e#227#228#0" expanded="true" />
@@ -49,8 +49,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/.travis.yml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java" />
         <option value="$PROJECT_DIR$/src/main/ci/InFixExpression.java" />
+        <option value="$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java" />
       </list>
     </option>
   </component>
@@ -128,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.InFixExpressionTest.alphabetsAreNotValidTokens">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -164,6 +164,81 @@
       <option name="MAIN_CLASS_NAME" value="ci.InFixExpressionTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="InFixExpressionTest.alphabetsAreNotValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ci.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AEP_project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ci" />
+      <option name="MAIN_CLASS_NAME" value="ci.InFixExpressionTest" />
+      <option name="METHOD_NAME" value="alphabetsAreNotValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="InFixExpressionTest.alphabetsAreNotValidTokens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ci.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AEP_project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ci" />
+      <option name="MAIN_CLASS_NAME" value="ci.InFixExpressionTest" />
+      <option name="METHOD_NAME" value="alphabetsAreNotValidTokens" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="InFixExpressionTest.multiplyDivideHaveThirdPrecedence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ci.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AEP_project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ci" />
+      <option name="MAIN_CLASS_NAME" value="ci.InFixExpressionTest" />
+      <option name="METHOD_NAME" value="multiplyDivideHaveThirdPrecedence" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -235,9 +310,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.alphabetsAreNotValid" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.alphabetsAreNotValidTokens" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.multiplyDivideHaveThirdPrecedence" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.alphabetsAreNotValidTokens" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.multiplyDivideHaveThirdPrecedence" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest.alphabetsAreNotValid" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.InFixExpressionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -258,29 +342,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 11m 41s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 17m 12s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 11m 56s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 17m 36s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 26m 23s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 18m 06s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 28m 11s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 19m 39s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 38m 54s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 19m 48s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 39m 46s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 20m 11s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 41m 48s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValid - 2018.04.02 at 17h 25m 58s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InFixExpressionTest - 2018.04.01 at 21h 43m 07s.xml">
-      <configuration name="InFixExpressionTest" configurationId="JUnit" />
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValidTokens - 2018.04.02 at 17h 26m 15s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValidTokens" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InFixExpressionTest_alphabetsAreNotValidTokens - 2018.04.02 at 17h 26m 52s.xml">
+      <configuration name="InFixExpressionTest.alphabetsAreNotValidTokens" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InFixExpressionTest_multiplyDivideHaveThirdPrecedence - 2018.04.02 at 17h 26m 20s.xml">
+      <configuration name="InFixExpressionTest.multiplyDivideHaveThirdPrecedence" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -363,23 +453,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ci/InFixExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="45" column="65" lean-forward="false" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+        <state relative-caret-position="353">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ci/InFixExpressionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/ci/InFixExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        <state relative-caret-position="265">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
           </folding>
         </state>
       </provider>
