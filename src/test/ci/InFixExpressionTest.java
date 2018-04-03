@@ -1,6 +1,8 @@
 package ci;
 import org.junit.Test;
 
+import java.util.EmptyStackException;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class InFixExpressionTest {
@@ -74,6 +76,12 @@ public class InFixExpressionTest {
     public void threeTimesFourPlusFourTimesFiveIsThirtyTwo() {
         InFixExpression expr = new InFixExpression("( 3 * 4 ) + ( 4 * 5 )");
         assertEquals(32.0, expr.evaluate());
+    }
+
+    @Test(expected = EmptyStackException.class)
+    public void testingAnInvalidExpression() {
+        InFixExpression expr = new InFixExpression("( 3 * 4 ) + ( 4 ) )");
+        assertEquals(16.0, expr.evaluate());
     }
 
 }

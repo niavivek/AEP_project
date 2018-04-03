@@ -1,6 +1,7 @@
 package ci;
 
 import java.util.ArrayList;
+import java.util.EmptyStackException;
 import java.util.Stack;
 
 public class InFixExpression {
@@ -99,7 +100,7 @@ public class InFixExpression {
                 tempVal = leftOperand / rightOperand;
                 break;
         }
-        valueStack.push(tempVal);
+            valueStack.push(tempVal);
     }
 
 
@@ -108,9 +109,9 @@ public class InFixExpression {
         checkExpression();
         Stack<String> operatorStack = new Stack<>();
         Stack<Double> valueStack = new Stack<>();
-
-        for (String temp : tokens) {
-            if (checkOperator(temp)) {
+        try {
+            for (String temp : tokens) {
+                if (checkOperator(temp)) {
                     if (operatorStack.isEmpty())
                         operatorStack.push(temp);
                     else {
@@ -123,15 +124,20 @@ public class InFixExpression {
                         }
                     }
                 } else if (temp.equals("("))
-                operatorStack.push(temp);
-            else if (temp.equals(")")) {
-                while (!operatorStack.peek().equals("("))
-                    calculate(operatorStack, valueStack);
-                operatorStack.pop();
-            } else {
-                Double val = Double.parseDouble(temp);
-                valueStack.push(val);
+                    operatorStack.push(temp);
+                else if (temp.equals(")")) {
+                    while (!operatorStack.peek().equals("("))
+                        calculate(operatorStack, valueStack);
+                    operatorStack.pop();
+                } else {
+                    Double val = Double.parseDouble(temp);
+                    valueStack.push(val);
+                }
             }
+        }
+        catch (EmptyStackException ese){
+            System.out.println("The expression you entered is invalid.");
+            throw ese;
         }
         while (!operatorStack.isEmpty()){
             calculate(operatorStack, valueStack);
