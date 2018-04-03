@@ -64,6 +64,10 @@ public class InFixExpressionTest {
         expr.checkExpression();
     }
 
-
+    @Test
+    public void threeTimesFourIsTwelve() {
+        InFixExpression expr = new InFixExpression("( 3 * 4 )");
+        assertEquals(12.0, expr.evaluate());
+    }
 
 }

@@ -1,6 +1,7 @@
 package ci;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class InFixExpression {
 
@@ -53,7 +54,7 @@ public class InFixExpression {
         if (checkPrecedence(value) > 0) return true;
         else{
             try{
-                float value_float = Float.parseFloat(value);
+                Double valueDouble = Double.parseDouble(value);
             }
             catch(NumberFormatException e){
                 System.out.println("The expression can only contain numbers, parenthesis and operators.");
@@ -71,5 +72,75 @@ public class InFixExpression {
         return true;
     }
 
+    private void calculate(Stack<String> operatorStack, Stack<Double> valueStack) {
+        Double rightOperand, leftOperand, tempVal;
+        String op = operatorStack.pop();
 
+        if (valueStack.isEmpty())
+            return;
+        rightOperand = valueStack.pop();
+        if (valueStack.isEmpty())
+            return;
+        leftOperand = valueStack.pop();
+
+        tempVal = 0.0;
+
+        switch (op) {
+            case "+":
+                tempVal = leftOperand + rightOperand;
+                break;
+            case "-":
+                tempVal = leftOperand - rightOperand;
+                break;
+            case "*":
+                tempVal = leftOperand * rightOperand;
+                break;
+            case "/":
+                tempVal = leftOperand / rightOperand;
+                break;
+        }
+        valueStack.push(tempVal);
+    }
+
+
+    public Double evaluate() {
+        Double result;
+        checkExpression();
+        Stack<String> operatorStack = new Stack<>();
+        Stack<Double> valueStack = new Stack<>();
+
+        for (String temp : tokens) {
+            if (checkOperator(temp)) {
+                    if (operatorStack.isEmpty())
+                        operatorStack.push(temp);
+                    else {
+                        if (checkPrecedence(temp) > checkPrecedence(operatorStack.peek()))
+                            operatorStack.push(temp);
+                        else {
+                            while (!operatorStack.isEmpty() && (checkPrecedence(temp) <= checkPrecedence(operatorStack.peek())))
+                                calculate(operatorStack, valueStack);
+                            operatorStack.push(temp);
+                        }
+                    }
+                } else if (temp.equals("("))
+                operatorStack.push(temp);
+            else if (temp.equals(")")) {
+                while (!operatorStack.peek().equals("("))
+                    calculate(operatorStack, valueStack);
+                operatorStack.pop();
+            } else {
+                Double val = Double.parseDouble(temp);
+                valueStack.push(val);
+            }
+        }
+        while (!operatorStack.isEmpty()){
+            calculate(operatorStack, valueStack);
+        }
+        if(valueStack.size() == 1){
+            result = valueStack.pop();
+        }
+        else
+            result = 0.0;
+        return result;
+    }
 }
